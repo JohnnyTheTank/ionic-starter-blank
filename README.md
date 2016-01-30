@@ -32,7 +32,8 @@ open `scss/ionic.app.scss` and add:
 
 `ionic add ionic-platform-web-client`
 
-## Switch to SCSS
+## Run npm and bower
 ```
 npm update
+bower update
 ```
