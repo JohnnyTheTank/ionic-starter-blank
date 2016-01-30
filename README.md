@@ -1,32 +1,38 @@
-This is an addon starter template for the [Ionic Framework](http://ionicframework.com/).
+# CUSTOM Template
 
-## How to use this template
+## .gitignore
+```
+/www/lib
+# Specifies intentionally untracked files to ignore when using Git
+# http://git-scm.com/docs/gitignore
 
-*This template does not work on its own*. It is missing the Ionic library, and AngularJS.
-
-To use this, either create a new ionic project using the ionic node.js utility, or copy and paste this into an existing Cordova project and download a release of Ionic separately.
-
-### With the Ionic tool:
-
-Take the name after `ionic-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
-
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myApp blank
+node_modules/
+platforms/
+plugins/
+.idea
 ```
 
-Then, to run it, cd into `myApp` and run:
+## Add andorid
+`ionic platform add android`
 
-```bash
-$ ionic platform add ios
-$ ionic build ios
-$ ionic emulate ios
+## Font Awesome
+[add Font-Awesome](https://blog.nraboy.com/2014/10/use-font-awesome-glyph-icons-ionicframework/)
+
+`bower install font-awesome --save`
+
+open `scss/ionic.app.scss` and add:
+
+```scss
+//awesome font
+@import "www/lib/font-awesome/scss/font-awesome.scss";
 ```
 
-Substitute ios for android if not on a Mac, but if you can, the ios development toolchain is a lot easier to work with until you need to do anything custom to Android.
+## Ionic Analytics Plugin
+[add Ionic Analytics Plugin](http://docs.ionic.io/v1.0/docs/analytics-from-scratch)
 
-## Demo
-http://plnkr.co/edit/tpl:IUU30p?p=preview
+`ionic add ionic-platform-web-client`
 
-## Issues
-Issues have been disabled on this repo, if you do find an issue or have a question consider posting it on the [Ionic Forum](http://forum.ionicframework.com/).  Or else if there is truly an error, follow our guidelines for [submitting an issue](http://ionicframework.com/contribute/#issues) to the main Ionic repository. On the other hand, pull requests are welcome here!
+## Switch to SCSS
+```
+npm update
+```
